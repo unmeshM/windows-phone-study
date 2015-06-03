@@ -5,20 +5,23 @@
     xmlns:local="using:WPBlankApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    mc:Ignorable="d" Background="{StaticResource MyAppPageBackgroundThemeBrush}">
+    
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="25*"/> 
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="25*"/>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Column="1" Grid.Row="1">
-            
+        
+        
+       <!--Content-->
+        <StackPanel Orientation="Vertical">
+        <Pivot Title="Pivot App">
+            <PivotItem Header="menu">
+                <Grid/>
+            </PivotItem>
+            <PivotItem Header="camera">
+                <Grid/>
+            </PivotItem>
+        </Pivot>
         </StackPanel>
+        
+        
     </Grid>
 </Page>
